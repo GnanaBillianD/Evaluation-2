@@ -1,16 +1,17 @@
+//safegaurding function parameter
 "use strict";
-let a= 45;
+let number1 = 45;
 
-let b = function (){
+let anonymousfFunc = function () {
     console.log("hi")
 }
 
-function safe(fun){
-    if(typeof fun == "function"){
-        fun();
-    }else{
+function namedFunc(func) {
+    if (typeof func == "function") {
+        func();
+    } else {
         console.log("please give the fuction only")
     }
 }
 
-safe(a);
+namedFunc(anonymousfFunc);

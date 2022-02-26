@@ -4,11 +4,11 @@ function fun() {
     console.log("no Parameter");
 }
 
-function fun1(a) {
-    console.log(a);
+function fun1(value) {
+    console.log(value);
 }
-function fun2(a,b) {
-    console.log(a, b);
+function fun2(num1, num2) {
+    console.log(num1, num2);
 }
 function fun3(a, b, c) {
     console.log(a, b, c);

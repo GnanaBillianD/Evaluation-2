@@ -1,19 +1,22 @@
 //When used alone, "this" refers to the global properties.
-  let x = this;
-  console.log(x);
+console.log("--------------------When used alone------------------------")
+let alone = global;
+console.log(alone);
 
 
 //In strict mode, when used alone, "this" also refers to the global properties.
-  "use strict";
-  let y = this;
-  console.log(x);
+console.log("--------------------When used alone in strict mode------------------------")
+"use strict";
+let strictMode = global;
+console.log(strictMode);
 
 
 //Inside of the object, "this" will print the object properties and method
+console.log("----------------------Inside of the object----------------------")
 let object = {
-  a: 1,
-  b: 2,
-  c: 3,
-  fun: function () { console.log(this)}
+  id: 2345 - 6543 - 6453 - 5645,
+  name: "benni",
+  type: "adhaar Card",
+  method: function () { console.log(this) }
 };
-object.fun();
+object.method();

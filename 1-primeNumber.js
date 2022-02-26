@@ -1,18 +1,19 @@
+//Print the prime number
 "use strict";
-let string = [];
-function PrimeNumber(a) {
-    if (typeof a === "number") {
-        for (let k = 2; k < a; k++) {
-            if (k == 2) {
-                string.push(k);
+console.log("----------------------prime number-------------------------")
+let savePrimeNumber = [];
+function PrimeNumber(numbers) {
+    if (typeof numbers === "number") {
+        for (let loop1 = 2; loop1 < numbers; loop1++) {
+            if (loop1 == 2) {
+                savePrimeNumber.push(loop1);
             }
-            for (let i = 2; i < k; i++) {
-                let b = k % i;
-                if (b == 0) {
+            for (let loop2 = 2; loop2 < loop1; loop2++) {
+                let saveReminder = loop1 % loop2;
+                if (saveReminder == 0) {
                     break;
-                }
-                if (i === k - 1) {
-                    string.push(k);
+                } else if (loop2 === loop1 - 1) {
+                    savePrimeNumber.push(loop1);
                 }
             }
         }
@@ -21,4 +22,4 @@ function PrimeNumber(a) {
     }
 }
 PrimeNumber(200);
-console.log(string);
+console.log(savePrimeNumber);

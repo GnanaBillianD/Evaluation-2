@@ -1,10 +1,11 @@
 "use strict";
-function dateOfBirth(year) {
-    if (typeof year === "number") {
-        let a = new Date();
-        let b = a.getFullYear();
-        let age = b - year;
-        return age;
+console.log("--------------------------calculate the age--------------------------------")
+function dateOfBirth(bornYear) {
+    if (typeof bornYear === "number") {
+        let date = new Date();
+        let presentYear = date.getFullYear();
+        let calculateAge = presentYear - bornYear;
+        return calculateAge;
     }
     else {
         return "please enter the year in number";

@@ -1,20 +1,23 @@
 "use strict";
 //function anatomy
-function add(a,b){
-    return a+b;
+console.log("-----------function anatomy-----------------------")
+function add(number1, number2) {
+    return number1 + number2;
 }
-console.log(add(2,3));
+console.log(add(2, 3));
 
 
 //anonymous function
-let a = [1,2,3,4,5]
-let b = a.reduce(function(a,b){
-    return a+b;
-})
-console.log(b)
+console.log("-----------anonymous function-----------------------")
+let sum1 = function (value1, value2) {
+    return value1 + value2;
+}
+console.log(sum1(10, 5))
+
 
 //assigning function to a variables
-let c = function(){
+console.log("-----------assigning function to a variablesy-----------------------")
+let print = function () {
     console.log("hi! hello");
 }
-c() ;
+print();
