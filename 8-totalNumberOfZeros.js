@@ -4,7 +4,7 @@ let numbersInArray = Array.from({ length: 101 }, function (v, i) { return i });
 
 
 let splitNumber = numbersInArray.toString().split("");//split the number(ex:[12,13]=['1','2','1','3'])  
-let storeZeros = splitNumber.filter((element) => { if (element == 0) { return element } });
+let storeZeros = splitNumber.filter((element) => element == 0 );
 let zerosCount = storeZeros.length - 1;
 console.log(zerosCount);
 
